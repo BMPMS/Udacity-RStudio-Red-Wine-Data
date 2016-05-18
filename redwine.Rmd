@@ -549,14 +549,16 @@ ggplot(rwine, aes(x=sulphates)) + geom_histogram(bins=10, fill='blue') +
   ggtitle("Quality v Log10 Sulphates Facet Grid")
 ```
   
-Histograms back this up.. 
+Histograms back this up..  
+ 
 ```{r sul3,echo=FALSE}
 ggplot(aes(x=quality,y=sulphates), data = rwine) + 
   geom_point(alpha = 1/5, position = position_jitter(h = 0))  + 
   stat_smooth(method = lm) +  scale_y_log10() + ylab('log10 sulphates') 
 ```
   
-What about mean and quantiles?
+What about mean and quantiles?  
+  
 ```{r sul4,echo=FALSE}
 ggplot(aes(x=quality,y=sulphates),data = rwine) + 
   geom_point(alpha = 1/5, position = position_jitter(h = 0)) +
@@ -566,9 +568,10 @@ ggplot(aes(x=quality,y=sulphates),data = rwine) +
   scale_y_log10() + ylab('log10 sulphates') 
 ```
   
-Slight positive trend still visible..
-
-What about **citric acid**?
+Slight positive trend still visible..  
+  
+What about **citric acid**?  
+  
 ``` {r sul5, echo=FALSE}
 ggplot(aes(x=citric.acid,y=sulphates,color=quality),data = rwine) + 
   geom_point(alpha = 1/5, position = position_jitter(h = 0))  + 
