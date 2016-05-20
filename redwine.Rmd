@@ -310,8 +310,7 @@ Below is the ggpairs for the transformed data.  I've colour coded the Pearson's 
   
 The corresponding plots are highighted in green.
 
-<img src="RedwineGGPlot.pdf" width="1000px" height="600px" />
-
+![GGPlot:](RedwineGGPlot.png)
 
 What does this mean though?  
 
